@@ -1,0 +1,12 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgb(8, 0, 58, 0.7), rgb(8, 0, 58, 0.7)),
+    url("../../assets/banner-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
