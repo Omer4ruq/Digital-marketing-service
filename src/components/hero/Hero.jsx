@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="hero pl-4 pr-4">
+    <div className="hero pl-4 pr-4 mb-16">
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">
           Get your business online in less than 24 hours
