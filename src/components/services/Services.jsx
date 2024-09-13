@@ -64,6 +64,7 @@ const Services = () => {
             alt="Social Media Marketing"
             className="w-16 h-16 object-cover mb-2 mx-auto"
           />
+
           <h1 className="text-sm font-semibold md:text-base lg:text-lg">PPC</h1>
         </div>
       </div>
