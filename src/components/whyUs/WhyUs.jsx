@@ -2,6 +2,7 @@ import React from "react";
 import bg from "../../assets/project-bg.jpg";
 import { SiFramework } from "react-icons/si";
 import { IoIosTimer } from "react-icons/io";
+import WhyUSContent from "./WhyUSContent";
 
 const WhyUs = () => {
   return (
@@ -9,8 +10,11 @@ const WhyUs = () => {
       <div>
         <img src={bg} alt="" />
       </div>
-      <div className="bg-[#555558]">
-        <div className="pt-20 pl-10 flex gap-4">
+      <div className="absolute -mt-72">
+        <WhyUSContent></WhyUSContent>
+      </div>
+      <div className="bg-[#555558] pt-40">
+        <div className="pt-20 pl-10 grid grid-cols-3 gap-4">
           <h1 className="text-white text-xl font-bold w-80">
             TOGETHER WE CAN GROW AND MARKET YOUR BUSINESS!
           </h1>
@@ -41,7 +45,7 @@ const WhyUs = () => {
             </div>
           </div>
         </div>
-        <div className="pt-20 pl-10 flex gap-4">
+        <div className="pt-20 pl-10 grid grid-cols-3 gap-4">
           <div className="flex gap-4">
             <div>
               <SiFramework className=" text-6xl text-yellow-400" />
