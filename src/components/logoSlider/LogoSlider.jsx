@@ -12,7 +12,7 @@ const LogoSlider = () => {
     "/src/assets/logo8.png",
   ];
   return (
-    <div className="mb-16">
+    <div className="mb-16 p-6">
       <div>
         <div className="text-center">
           <p className="text-base text-orange-500 md:text-lg lg:text-xl font-light mb-2">
