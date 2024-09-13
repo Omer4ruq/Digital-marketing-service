@@ -2,6 +2,7 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import LogoSlider from "./components/logoSlider/LogoSlider";
 import CompanyGoalSection from "./components/companyGoalSection.jsx/CompanyGoalSection";
+import Services from "./components/services/Services";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero></Hero>
       <LogoSlider></LogoSlider>
       <CompanyGoalSection></CompanyGoalSection>
+      <Services></Services>
     </>
   );
 }
