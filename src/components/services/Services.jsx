@@ -17,7 +17,7 @@ const Services = () => {
         <img src={social} alt="" className="w-16 object-center" />
         <h1>Social Media Marketing</h1>
       </div> */}
-      <div className="flex justify-between pl-10 pr-10 mb-10">
+      <div className="flex justify-between pl-1 md:pl-10 pr-1 md:pr-10 mb-10 ">
         <div className="bg-white w-40 h-36 drop-shadow-xl text-center flex flex-col items-center justify-center p-4 md:w-48 md:h-40 lg:w-[370px] lg:h-56 hover:cursor-pointer hover:bg-yellow-400 transition-colors duration-1000 ease-in-out ">
           <img
             src={social}

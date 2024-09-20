@@ -4,7 +4,7 @@ import img2 from "../../assets/about2.jpg";
 
 const CompanyGoalSection = () => {
   return (
-    <div className="grid grid-cols-1 p-4 md:mb-16 md:grid-cols-2 md:p-10">
+    <div className="grid grid-cols-1 p-4  mb-16 md:grid-cols-2 md:p-10">
       <section className="pr-1 mt-6 md:mt-12 mb-8">
         <h1 className="text-4xl font-semibold mb-4">
           Digital Marketing Company in Chittagong, Bangladesh
@@ -35,10 +35,14 @@ const CompanyGoalSection = () => {
       </section>
       <section className="pl-0 md:p-4">
         <div>
-          <img src={img1} alt="sdf" className="absolute h-[420px]" />
+          <img src={img1} alt="sdf" className="md:absolute h-[420px]" />
         </div>
         <div>
-          <img src={img2} alt="" className="absolute mt-60 ml-10 h-[320px]" />
+          <img
+            src={img2}
+            alt=""
+            className="md:absolute -mt-40 md:mt-60 ml-10 h-[320px]"
+          />
         </div>
       </section>
     </div>

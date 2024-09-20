@@ -30,8 +30,8 @@ const WhyUSContent = () => {
           </div>
         </section>
         <section className="pl-0 md:pr-10">
-          <div className="mt-24">
-            <img src={img1} alt="sdf" className="absolute w-[420px]" />
+          <div className="md:mt-24">
+            <img src={img1} alt="sdf" className="md:absolute w-[420px]" />
           </div>
           {/* <div>
             <img src={img2} alt="" className="absolute mt-60 ml-10 h-[320px]" />

@@ -20,7 +20,7 @@ const Op = () => {
               <h1 className="text-lg font-semibold text-white text-center md:text-start">
                 Got an Idea?
               </h1>
-              <h2 className="text-5xl font-bold text-white">
+              <h2 className="text-center text-4xl md:text-5xl font-bold text-white">
                 Let's Work on It
               </h2>
             </div>
