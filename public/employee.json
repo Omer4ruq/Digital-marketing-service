@@ -1,0 +1,82 @@
+[
+  {
+    "name": "John Doe",
+    "designation": "SEO Specialist",
+    "profile_picture": "https://example.com/images/john_doe.jpg",
+    "facebook": "https://facebook.com/johndoe",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "instagram": "https://instagram.com/johndoe"
+  },
+  {
+    "name": "Jane Smith",
+    "designation": "Digital Marketing Manager",
+    "profile_picture": "https://example.com/images/jane_smith.jpg",
+    "facebook": "https://facebook.com/janesmith",
+    "linkedin": "https://linkedin.com/in/janesmith",
+    "instagram": "https://instagram.com/janesmith"
+  },
+  {
+    "name": "Alice Johnson",
+    "designation": "Content Writer",
+    "profile_picture": "https://example.com/images/alice_johnson.jpg",
+    "facebook": "https://facebook.com/alicejohnson",
+    "linkedin": "https://linkedin.com/in/alicejohnson",
+    "instagram": "https://instagram.com/alicejohnson"
+  },
+  {
+    "name": "Bob Brown",
+    "designation": "Web Designer",
+    "profile_picture": "https://example.com/images/bob_brown.jpg",
+    "facebook": "https://facebook.com/bobbrown",
+    "linkedin": "https://linkedin.com/in/bobbrown",
+    "instagram": "https://instagram.com/bobbrown"
+  },
+  {
+    "name": "Charlie Davis",
+    "designation": "Social Media Manager",
+    "profile_picture": "https://example.com/images/charlie_davis.jpg",
+    "facebook": "https://facebook.com/charliedavis",
+    "linkedin": "https://linkedin.com/in/charliedavis",
+    "instagram": "https://instagram.com/charliedavis"
+  },
+  {
+    "name": "Emily White",
+    "designation": "PPC Specialist",
+    "profile_picture": "https://example.com/images/emily_white.jpg",
+    "facebook": "https://facebook.com/emilywhite",
+    "linkedin": "https://linkedin.com/in/emilywhite",
+    "instagram": "https://instagram.com/emilywhite"
+  },
+  {
+    "name": "Frank Green",
+    "designation": "Email Marketing Specialist",
+    "profile_picture": "https://example.com/images/frank_green.jpg",
+    "facebook": "https://facebook.com/frankgreen",
+    "linkedin": "https://linkedin.com/in/frankgreen",
+    "instagram": "https://instagram.com/frankgreen"
+  },
+  {
+    "name": "Grace Lee",
+    "designation": "Graphic Designer",
+    "profile_picture": "https://example.com/images/grace_lee.jpg",
+    "facebook": "https://facebook.com/gracelee",
+    "linkedin": "https://linkedin.com/in/gracelee",
+    "instagram": "https://instagram.com/gracelee"
+  },
+  {
+    "name": "Henry Walker",
+    "designation": "Content Strategist",
+    "profile_picture": "https://example.com/images/henry_walker.jpg",
+    "facebook": "https://facebook.com/henrywalker",
+    "linkedin": "https://linkedin.com/in/henrywalker",
+    "instagram": "https://instagram.com/henrywalker"
+  },
+  {
+    "name": "Isabella Martinez",
+    "designation": "Analytics Specialist",
+    "profile_picture": "https://example.com/images/isabella_martinez.jpg",
+    "facebook": "https://facebook.com/isabellamartinez",
+    "linkedin": "https://linkedin.com/in/isabellamartinez",
+    "instagram": "https://instagram.com/isabellamartinez"
+  }
+]

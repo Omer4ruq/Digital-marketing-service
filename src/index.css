@@ -24,3 +24,13 @@ a {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.scroll-container {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

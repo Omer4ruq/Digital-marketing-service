@@ -4,6 +4,8 @@ import LogoSlider from "./components/logoSlider/LogoSlider";
 import CompanyGoalSection from "./components/companyGoalSection.jsx/CompanyGoalSection";
 import Services from "./components/services/Services";
 import WhyUs from "./components/whyUs/WhyUs";
+import Faq from "./components/FAQ/Faq";
+import Employee from "./components/employee/Employee";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <CompanyGoalSection></CompanyGoalSection>
       <Services></Services>
       <WhyUs></WhyUs>
+      <Faq></Faq>
+      <Employee></Employee>
     </>
   );
 }
