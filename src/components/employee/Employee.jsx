@@ -56,7 +56,7 @@ const Employee = () => {
             <ChevronLeft size={24} className="mr-3"></ChevronLeft>
           </button>
           <button
-            className="absolute top-1/2 -translate-y-1/2 right-5 md:right-10 flex items-center justify-end
+            className="absolute top-1/2 -translate-y-1/2 right-5 md:right-11 flex items-center justify-end
       size-12 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 text-white z-10"
             onClick={scrolRight}
           >

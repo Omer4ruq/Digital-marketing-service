@@ -18,7 +18,7 @@ const EmployeeCart = ({ item }) => {
         <img
           src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-755-1-1024x683.jpg"
           alt=""
-          className="w-36 h-36 mx-auto rounded-full bg-gray-500 "
+          className="w-40 h-40 mx-auto rounded-full bg-gray-500 "
         />
         <div className="space-y-4 text-center divide-y divide-gray-300">
           <div className="my-2 space-y-2">

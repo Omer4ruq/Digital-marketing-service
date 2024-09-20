@@ -6,6 +6,8 @@ import Services from "./components/services/Services";
 import WhyUs from "./components/whyUs/WhyUs";
 import Faq from "./components/FAQ/Faq";
 import Employee from "./components/employee/Employee";
+import Footer from "./components/footer/Footer";
+import Op from "./components/footer/op";
 
 function App() {
   return (
@@ -16,8 +18,11 @@ function App() {
       <CompanyGoalSection></CompanyGoalSection>
       <Services></Services>
       <WhyUs></WhyUs>
-      <Faq></Faq>
+
       <Employee></Employee>
+      <Faq></Faq>
+      <Op></Op>
+      <Footer></Footer>
     </>
   );
 }
