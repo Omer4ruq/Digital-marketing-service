@@ -14,13 +14,13 @@ const EmployeeCart = ({ item }) => {
         <h1 className="text-white text-base relative -mt-8">{item.name}</h1>
         <h1 className=" text-white text-base relatve">{item.designation}</h1>
       </div> */}
-      <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 bg-white text-gray-800">
+      <div className="flex flex-col justify-center max-w-xs h-72 p-6 shadow-md rounded-xl sm:px-12 bg-white text-gray-800">
         <img
           src="https://www.corporatephotographylondon.com/wp-content/uploads/2019/11/HKstrategies-755-1-1024x683.jpg"
           alt=""
           className="w-40 h-40 mx-auto rounded-full bg-gray-500 "
         />
-        <div className="space-y-4 text-center divide-y divide-gray-300">
+        <div className="space-y-4 text-center divide-y divide-gray-300 ">
           <div className="my-2 space-y-2">
             <h2 className="text-xl font-semibold sm:text-xl px-0 ">
               {item.name}
