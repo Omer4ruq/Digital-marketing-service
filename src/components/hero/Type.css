@@ -1,0 +1,21 @@
+.first-typewriter::before,
+.first-typewriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.first-typewriter::before {
+  background-color: white;
+  animation: typewriter 1.5s steps(8) infinite alternate;
+}
+
+.first-typewriter::after {
+  width: 0.125rem;
+  background-color: black;
+  animation: typewriter 1.5s steps(8) infinite alternate,
+    blink 500ms steps(8) infinite;
+}

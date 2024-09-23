@@ -9,7 +9,7 @@ const TypingText = ({ typo }) => {
 
   //   ];
   const textArray = [typo];
-  const [textIndex, setTextIndex] = useState(0);
+  // const [textIndex, setTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -41,8 +41,11 @@ const TypingText = ({ typo }) => {
   }, [displayedText, isDeleting, loopNum, typingSpeed]);
 
   return (
-    <div className="text-center">
-      <p className="text-base md:text-lg lg:text-xl font-mono mb-6">
+    <div className="">
+      <p
+        className="text-base md:text-lg lg:text-xl font-mono mb-6"
+        style={{ wordSpacing: "7px" }}
+      >
         <span>{displayedText}</span>
         <span className="animate-blink">|</span>
       </p>

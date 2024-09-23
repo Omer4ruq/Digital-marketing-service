@@ -10,11 +10,16 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" }, // Scrolls by the width of half the logos
         },
+
         blink: {
           "0%, 100%": { opacity: 1 },
           "50%": { opacity: 0 },
         },
       },
+      fontFamily: {
+        share: ["Share", "sans-serif"], // Add the custom font
+      },
+
       animation: {
         scroll: "scroll 15s linear infinite",
         pause: "scroll 15s linear paused", // Stops the animation when hovered

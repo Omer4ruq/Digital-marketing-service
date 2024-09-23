@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -9,4 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.typo {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }

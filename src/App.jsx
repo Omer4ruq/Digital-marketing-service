@@ -8,6 +8,7 @@ import Faq from "./components/FAQ/Faq";
 import Employee from "./components/employee/Employee";
 import Footer from "./components/footer/Footer";
 import Op from "./components/footer/op";
+import WorkingProcess from "./components/workingProcess/WorkingProcess";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <CompanyGoalSection></CompanyGoalSection>
       <Services></Services>
       <WhyUs></WhyUs>
-
+      <WorkingProcess></WorkingProcess>
       <Employee></Employee>
       <Faq></Faq>
       <Op></Op>
