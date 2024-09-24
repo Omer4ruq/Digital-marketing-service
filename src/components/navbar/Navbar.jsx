@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { MdOutlineSegment } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -29,9 +30,11 @@ const Navbar = () => {
           <li className="hover:text-yellow-300 hover:cursor-pointer">
             About Us
           </li>
-          <li className="hover:text-yellow-300 hover:cursor-pointer">
-            Contact
-          </li>
+          <Link to="contact">
+            <li className="hover:text-yellow-300 hover:cursor-pointer">
+              Contact
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="block md:hidden ">
@@ -69,9 +72,11 @@ const Navbar = () => {
               <li className="hover:text-yellow-300 hover:cursor-pointer">
                 About Us
               </li>
-              <li className="hover:text-yellow-300 hover:cursor-pointer">
-                Contact
-              </li>
+              <Link to="/contact">
+                <li className="hover:text-yellow-300 hover:cursor-pointer">
+                  Contact
+                </li>
+              </Link>
             </ul>
           </div>
         )}

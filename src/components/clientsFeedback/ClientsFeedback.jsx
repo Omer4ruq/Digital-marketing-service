@@ -47,14 +47,14 @@ const ClientsFeedback = () => {
     },
   ];
   return (
-    <div className=" mb-16 p-6">
-      <div className="grid grid-cols-2">
+    <div className="mb-44 md:mb-16 md:p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <section>
-          <div className="absolute">
-            <h1 className="text-lg font-bold text-[#F6C71E] mb-4">
+          <div className="ml-2 md:absolute">
+            <h1 className="text-base text-[#F6C71E] md:text-lg lg:text-xl font-semibold mb-2 text-center md:text-start">
               Results Of Our Hard Work
             </h1>
-            <h4 className="text-4xl font-bold w-[500px]">
+            <h4 className="text-xl text-black md:text-2xl lg:text-3xl font-bold mb-2 md:w-[500px] text-center md:text-start">
               Our clients love to work with us and here is what they have to
               say.
             </h4>
@@ -69,7 +69,7 @@ const ClientsFeedback = () => {
             pagination={{
               clickable: true,
             }}
-            navigation={true}
+            navigation={false}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
@@ -77,7 +77,7 @@ const ClientsFeedback = () => {
             {cards.map((card) => (
               <div key={card.id}>
                 <SwiperSlide>
-                  <div className="w-[500px] h-72 bg-[#e4e4e6]">
+                  <div className="w-[500px] h-72  bg-[#e4e4e6] md:mr-36">
                     <div className="p-8">
                       <h1 className="text-3xl font-bold text-start">
                         {card.title}
@@ -109,7 +109,7 @@ const ClientsFeedback = () => {
         </SwiperSlide> */}
           </Swiper>
         </section>
-        <section className="pl-0 md:p-4">
+        <section className="hidden md:block md:p-4  ">
           <div>
             <img
               src="https://brainsmediasolutions.com/wp-content/uploads/2022/12/testimonial-dots.png"
@@ -121,12 +121,12 @@ const ClientsFeedback = () => {
             <img
               src="https://brainsmediasolutions.com/wp-content/uploads/2023/05/test-2.jpg"
               alt="sdf"
-              className="-mt-14 ml-16"
+              className="-mt-14 ml-6"
             />
           </div>
           <div className="">
-            <div className="bg-slate-700 w-56 h-[500px] absolute -mt-[550px] ml-[440px]">
-              <h1 className="p-7 text-4xl font-bold text-white text-center">
+            <div className="bg-slate-700 w-64 h-[450px] absolute -mt-[500px] ml-[400px]">
+              <h1 className="p-5 mt-10 text-4xl font-bold text-white text-center">
                 We have received an excellent rating of 4.7 out of 5 from both
                 our clients and employees
               </h1>

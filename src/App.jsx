@@ -11,21 +11,13 @@ import Op from "./components/footer/op";
 import WorkingProcess from "./components/workingProcess/WorkingProcess";
 import ClientsFeedback from "./components/clientsFeedback/ClientsFeedback";
 import CardSlider from "./components/clientsFeedback/CardSlider";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Hero></Hero>
-      <LogoSlider></LogoSlider>
-      <CompanyGoalSection></CompanyGoalSection>
-      <Services></Services>
-      <WhyUs></WhyUs>
-      <WorkingProcess></WorkingProcess>
-      <ClientsFeedback></ClientsFeedback>
-      {/* <CardSlider></CardSlider> */}
-      <Employee></Employee>
-      <Faq></Faq>
+      <Outlet></Outlet>
       <Op></Op>
       <Footer></Footer>
     </>
