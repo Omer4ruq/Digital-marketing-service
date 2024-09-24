@@ -1,0 +1,21 @@
+/* Main slider container */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Card container will move horizontally */
+.card-container {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* Each individual card styling */
+.card {
+  min-width: 100%; /* Make each card take the full width of the container */
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ddd;
+}

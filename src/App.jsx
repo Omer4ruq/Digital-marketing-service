@@ -9,6 +9,8 @@ import Employee from "./components/employee/Employee";
 import Footer from "./components/footer/Footer";
 import Op from "./components/footer/op";
 import WorkingProcess from "./components/workingProcess/WorkingProcess";
+import ClientsFeedback from "./components/clientsFeedback/ClientsFeedback";
+import CardSlider from "./components/clientsFeedback/CardSlider";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Services></Services>
       <WhyUs></WhyUs>
       <WorkingProcess></WorkingProcess>
+      <ClientsFeedback></ClientsFeedback>
+      {/* <CardSlider></CardSlider> */}
       <Employee></Employee>
       <Faq></Faq>
       <Op></Op>
