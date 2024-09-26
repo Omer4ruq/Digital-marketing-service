@@ -20,16 +20,23 @@ const Navbar = () => {
       </div>
       <div className="hidden md:block">
         <ul>
-          <li className="hover:text-yellow-300  hover:cursor-pointer ">Home</li>
+          <Link to="/">
+            <li className="  hover:text-yellow-300  hover:cursor-pointer ">
+              Home
+            </li>
+          </Link>
 
           <li className="hover:text-yellow-300  hover:cursor-pointer">
             {" "}
             Services
           </li>
           <li className="hover:text-yellow-300 hover:cursor-pointer">Blogs</li>
-          <li className="hover:text-yellow-300 hover:cursor-pointer">
-            About Us
-          </li>
+          <Link to="aboutus">
+            <li className="hover:text-yellow-300 hover:cursor-pointer">
+              About Us
+            </li>
+          </Link>
+
           <Link to="contact">
             <li className="hover:text-yellow-300 hover:cursor-pointer">
               Contact
@@ -58,9 +65,11 @@ const Navbar = () => {
               <span>Solution</span>
             </div>
             <ul className="text-center grid grid-cols-1  pt-20">
-              <li className="  hover:text-yellow-300  hover:cursor-pointer ">
-                Home
-              </li>
+              <Link to="/">
+                <li className="  hover:text-yellow-300  hover:cursor-pointer ">
+                  Home
+                </li>
+              </Link>
 
               <li className="hover:text-yellow-300  hover:cursor-pointer">
                 {" "}
@@ -69,10 +78,12 @@ const Navbar = () => {
               <li className="hover:text-yellow-300 hover:cursor-pointer">
                 Blogs
               </li>
-              <li className="hover:text-yellow-300 hover:cursor-pointer">
-                About Us
-              </li>
-              <Link to="/contact">
+              <Link to="aboutus">
+                <li className="hover:text-yellow-300 hover:cursor-pointer">
+                  About Us
+                </li>
+              </Link>
+              <Link to="contact">
                 <li className="hover:text-yellow-300 hover:cursor-pointer">
                   Contact
                 </li>

@@ -1,0 +1,21 @@
+.about-us-container {
+  padding: 20px;
+}
+
+.services-menu {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.services-menu button {
+  cursor: pointer;
+}
+
+.service-details {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

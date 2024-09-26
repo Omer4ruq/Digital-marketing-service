@@ -28,7 +28,17 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="contact">
+      <div className="w-full h-[550px] bg-stone-600">
+        <h1 className="text-5xl font-bold text-center pt-28 pl-10 pr-10 text-white">
+          We Love Connecting With People And Exchanging Ideas! Call Us Today!
+        </h1>
+        <p className="text-base font-medium text-gray-400 p-20 pt-14 text-center">
+          Whether you are a small startup or a growing business, our customized
+          digital marketing services can help fast-track your online visibility,
+          increase brand awareness, and generate sales.
+        </p>
+      </div>
+      <div className="contact pt-12">
         <div className="contact-col">
           <h3>Send Us a message</h3>
           <p>

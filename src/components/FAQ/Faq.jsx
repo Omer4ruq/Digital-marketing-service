@@ -1,11 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Faq = () => {
+  // Controls the animation based on scroll
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.3, // Trigger animation when 30% of the section is in view
+  });
+
+  // Trigger animation when the section comes into view
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  // Animation variants for text and items
+  const textVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
     <div>
-      <div>
-        <h1 className="text-5xl text-center font-bold mt-16 mb-8">Our FAQs</h1>
-      </div>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={textVariants}
+        className="logo-slider-container w-full overflow-hidden"
+      >
+        {/* Title and subtitle */}
+        <motion.div className="text-center">
+          <motion.h1 className="text-xl text-black md:text-3xl lg:text-5xl font-bold mb-10">
+            Our FAQs
+          </motion.h1>
+        </motion.div>
+      </motion.div>
+
       <div className="grid grid-cols-2 gap-2">
         <div>
           <div className="collapse collapse-arrow bg-white rounded-none mb-2">
@@ -45,11 +90,12 @@ const Faq = () => {
               <p>
                 A good digital marketing company has a team of creative
                 professionals with years of experience, good communication
-                skills, and are open to listening to their
+                skills, and are open to listening to their clients.
               </p>
             </div>
           </div>
         </div>
+
         <div>
           <div className="collapse collapse-arrow bg-white rounded-none mb-2">
             <input type="radio" name="my-accordion-2" defaultChecked />

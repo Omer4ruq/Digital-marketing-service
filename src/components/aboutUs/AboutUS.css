@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgb(8, 0, 58, 0.7), rgb(8, 0, 58, 0.7)),
+    url("https://brainsmediasolutions.com/wp-content/uploads/2023/04/group-of-happy-friends-people-smiling-and-connect-2022-02-05-03-46-02-JN7LEZH-a.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typo {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
