@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const SocialMediaMarketingSercice = () => {
   return (
     <div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <img
           src="https://www.herawisconsin.org/wp-content/uploads/2024/04/1667919899636a701b121a1.png"
           alt=""

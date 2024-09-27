@@ -5,7 +5,7 @@ const SEOService = () => {
   return (
     <div>
       <div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <img
             src="https://intersmart.ae/wp-content/uploads/2024/04/5-Ways-SEO-Online-Marketing-Can-Transform-Your-Business.webp"
             alt=""

@@ -4,7 +4,7 @@
 
 .services-menu {
   display: flex;
-  gap: 1px;
+  gap: 4px;
   margin-bottom: 20px;
   justify-content: center;
 }

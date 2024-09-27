@@ -6,6 +6,7 @@ import web from "../../assets/development.png";
 import content from "../../assets/content.png";
 import seo from "../../assets/seo.png";
 import ppc from "../../assets/pay-per-click.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const controls = useAnimation();
@@ -86,14 +87,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
         >
-          <img
-            src={web}
-            alt="Website Design"
-            className="w-16 h-16 object-cover mb-2 mx-auto"
-          />
-          <h1 className="text-sm font-semibold md:text-base lg:text-lg">
-            Website Design
-          </h1>
+          <Link to="web-design">
+            <img
+              src={web}
+              alt="Website Design"
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="text-sm font-semibold md:text-base lg:text-lg">
+              Website Design
+            </h1>
+          </Link>
         </motion.div>
 
         <motion.div

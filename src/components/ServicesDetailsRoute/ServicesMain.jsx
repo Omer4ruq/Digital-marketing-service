@@ -35,7 +35,6 @@ const ServicesMain = () => {
     <div>
       <ServiceDetails></ServiceDetails>
       <div className="about-us-container">
-        <h1>About Us</h1>
         <div className="services-menu">
           {/* social media marketing */}
           <button onClick={() => setActiveService("ServiceOne")}>

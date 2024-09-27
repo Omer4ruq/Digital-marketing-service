@@ -3,7 +3,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 const ContentWrittingService = () => {
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <img
         src="https://contentwriters.com/blog/wp-content/uploads/PPC2018.jpg"
         alt=""

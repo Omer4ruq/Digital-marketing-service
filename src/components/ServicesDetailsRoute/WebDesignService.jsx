@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const WebDesignService = () => {
   return (
     <div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <img
           src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/Image_-_How_to_design_a_website_.jpeg-900x510.jpg"
           alt=""

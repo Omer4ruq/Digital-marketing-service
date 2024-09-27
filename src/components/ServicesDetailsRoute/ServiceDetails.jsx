@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceDetails = () => {
   return (
-    <div className="pl-16">
+    <div className="pl-8 pr-4 md:pl-16">
       <h1 className="text-3xl font-bold text-center mb-10">
         No.1 Digital Marketing and Social Media Agency in Bangladesh
       </h1>

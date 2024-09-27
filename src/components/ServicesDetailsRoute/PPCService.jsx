@@ -6,7 +6,7 @@ const PPCService = () => {
     <div>
       <div>
         <div>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <img
               src="https://www.launch-marketing.com/wp-content/uploads/2023/06/GettyImages-1251358514-1024x701.jpg"
               alt=""
