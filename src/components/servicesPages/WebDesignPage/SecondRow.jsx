@@ -47,11 +47,7 @@ const SecondRow = () => {
             variants={textVariants}
             className="logo-slider-container w-full overflow-hidden"
           >
-            {/* Title and subtitle */}
             <motion.div className="text-center">
-              {/* <motion.p className="text-base text-yellow-400 md:text-lg lg:text-xl font-light mb-2">
-                Website Development and Digital Marketing Company
-              </motion.p> */}
               <motion.h1 className="text-xl text-white md:text-3xl lg:text-5xl font-bold mb-10">
                 Get the most out of your marketing efforts with our ROI-driven
                 design services.

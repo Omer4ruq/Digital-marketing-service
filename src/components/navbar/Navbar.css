@@ -23,16 +23,3 @@
   background: #212ea0;
   transition: 0.5s;
 }
-
-.group-hover .absolute {
-  top: 100%; /* Position the dropdown below the parent */
-}
-
-.absolute {
-  display: none;
-  position: absolute;
-}
-
-.group:hover .absolute {
-  display: block;
-}

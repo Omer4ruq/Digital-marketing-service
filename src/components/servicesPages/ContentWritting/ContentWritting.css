@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+.content {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgb(8, 0, 58, 0.7), rgb(8, 0, 58, 0.7)),
+    url("./ContentImg/office.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

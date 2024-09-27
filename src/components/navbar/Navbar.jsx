@@ -27,9 +27,9 @@ const Navbar = () => {
 
           {/* Dropdown for Services */}
           <Link>
-            <li className="hover:text-yellow-300 hover:cursor-pointer relative group ">
+            <li className="hover:text-yellow-300 hover:cursor-pointer relative  ">
               Services
-              <ul className="absolute hidden group-hover:block bg-slate-800 text-white mt-0 w-40">
+              <ul className=" hidden hover:block bg-slate-800 text-white mt-0 w-40">
                 <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
                   <Link to="/service1">Web Design</Link>
                 </li>
@@ -71,7 +71,7 @@ const Navbar = () => {
           </button>
         ) : (
           <div
-            className={`bg-slate-800 w-2/3 h-screen absolute -ml-[306px] -mt-5 transition-transform transform ${
+            className={`bg-slate-800 w-2/3 h-screen absolute  -ml-[306px] -mt-5 transition-transform transform  ${
               nav ? "translate-x-0" : "-translate-x-full"
             } duration-300 ease-in`}
           >

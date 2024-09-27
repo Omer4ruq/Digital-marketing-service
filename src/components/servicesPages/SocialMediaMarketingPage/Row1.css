@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+.row1 {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./socialImage/social_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

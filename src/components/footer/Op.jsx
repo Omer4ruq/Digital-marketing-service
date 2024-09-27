@@ -7,8 +7,7 @@ const Op = () => {
   return (
     <div>
       <div className="bg-white h-40 "></div>
-      <div className="bg-slate-900 h-24 "></div>
-      <div className=" -mt-32 md:-mt-24  bg-[#555558] w-4/5 md:w-11/12 h-52 md:h-40 ml-12 opacity-90">
+      <div className="absolute -mt-32 md:-mt-24  bg-[#555558] w-4/5 md:w-11/12 h-52 md:h-40 ml-12 opacity-90">
         <div className=" absolute ml-0 md:ml-[745px] rotate-0 -mt-44 md:-mt-60">
           <img
             src="https://brainsmediasolutions.com/wp-content/uploads/2023/01/footer-bg-line-shape.png"
@@ -41,6 +40,7 @@ const Op = () => {
           </div>
         </div>
       </div>
+      <div className="bg-slate-900 h-24 "></div>
     </div>
   );
 };

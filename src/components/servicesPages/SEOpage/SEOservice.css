@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+.seo {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./SEOImg/bg_header_3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+  align-items: center;
+  justify-content: center;
+}

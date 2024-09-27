@@ -71,14 +71,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
         >
-          <img
-            src={social}
-            alt="Social Media Marketing"
-            className="w-16 h-16 object-cover mb-2 mx-auto"
-          />
-          <h1 className="text-sm font-semibold md:text-base lg:text-lg">
-            Social Media Marketing
-          </h1>
+          <Link to="social-marketing">
+            <img
+              src={social}
+              alt="Social Media Marketing"
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="text-sm font-semibold md:text-base lg:text-lg">
+              Social Media Marketing
+            </h1>
+          </Link>
         </motion.div>
 
         <motion.div
@@ -105,14 +107,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
         >
-          <img
-            src={content}
-            alt="Content Writing"
-            className="w-16 h-16 object-cover mb-2 mx-auto"
-          />
-          <h1 className="text-sm font-semibold md:text-base lg:text-lg">
-            Content Writing
-          </h1>
+          <Link to="content-writting">
+            <img
+              src={content}
+              alt="Content Writing"
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="text-sm font-semibold md:text-base lg:text-lg">
+              Content Writing
+            </h1>
+          </Link>
         </motion.div>
       </div>
 
@@ -124,12 +128,16 @@ const Services = () => {
           initial="hidden"
           animate={controls}
         >
-          <img
-            src={seo}
-            alt="SEO"
-            className="w-16 h-16 object-cover mb-2 mx-auto"
-          />
-          <h1 className="text-sm font-semibold md:text-base lg:text-lg">SEO</h1>
+          <Link to="seo">
+            <img
+              src={seo}
+              alt="SEO"
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="text-sm font-semibold md:text-base lg:text-lg">
+              SEO
+            </h1>
+          </Link>
         </motion.div>
 
         <motion.div

@@ -1,4 +1,7 @@
 import React from "react";
+import customize from "./serviceImages/custom.png";
+import responsive from "./serviceImages/responsive.png";
+import userFriendly from "./serviceImages/web-design.png";
 
 const SecondText = () => {
   return (
@@ -56,6 +59,62 @@ const SecondText = () => {
             Stand out from competitors and gain a competitive advantage with a
             well-designed website.
           </p>
+        </div>
+      </div>
+      <div className="bg-white ">
+        <div className="pt-10 pb-4">
+          <h1 className="text-center font-bold text-2xl pb-4">
+            Professional Website Development And Design Company Based In Belgaum
+          </h1>
+          <h1 className="text-gray-400 text-center">
+            Having a responsive website design is crucial for promoting your
+            brand and establishing a strong digital presence in today's
+            competitive marketplace.
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 p-8 gap-6">
+          <div className="bg-[#f5f5f5] p-10">
+            <img
+              src={customize}
+              alt=""
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="font-bold text-2xl text-center mb-4">
+              Customized Approach
+            </h1>
+            <p className="text-gray-400 text-center ">
+              Our website designing company offers a customized approach to
+              ensure that your website meets your specific needs and goals.
+            </p>
+          </div>
+          <div className="bg-[#f5f5f5] p-10">
+            <img
+              src={userFriendly}
+              alt=""
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="font-bold text-2xl text-center mb-4">
+              User-Friendly Design
+            </h1>
+            <p className="text-gray-400 text-center ">
+              Our website designing company offers a customized approach to
+              ensure that your website meets your specific needs and goals.
+            </p>
+          </div>
+          <div className="bg-[#f5f5f5] p-10">
+            <img
+              src={responsive}
+              alt=""
+              className="w-16 h-16 object-cover mb-2 mx-auto"
+            />
+            <h1 className="font-bold text-2xl text-center mb-4">
+              Responsive Design
+            </h1>
+            <p className="text-gray-400 text-center ">
+              Our mobile-friendly design approach ensures that your website
+              looks great and functions effectively on all devices.
+            </p>
+          </div>
         </div>
       </div>
     </div>

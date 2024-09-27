@@ -38,7 +38,7 @@ const FirstRow = () => {
         bgImage="https://brainsmediasolutions.com/wp-content/uploads/2023/04/web-designers-working-at-the-office-2021-09-17-18-15-50-utc-min.jpg"
         bgImageAlt="the cat"
         strength={400}
-        className="relative h-[]100vh"
+        className="relative h-screen md:h-[100vh]"
       >
         <div className="flex items-center justify-center absolute min-h-screen w-full bg-[linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7))] bg-cover bg-center">
           <motion.div
@@ -47,7 +47,6 @@ const FirstRow = () => {
             animate={controls}
             variants={textVariants}
           >
-            {/* Title and subtitle */}
             <motion.div className="text-center">
               <motion.p className="text-base text-yellow-400 md:text-lg lg:text-xl font-light mb-2">
                 Website Development and Digital Marketing Company
