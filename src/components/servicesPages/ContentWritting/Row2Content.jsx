@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion"; // Import framer-motion and useInView hook
 import ContuctUsButton from "../../ContuctUsButton";
 
 const Row2Content = () => {
+  // Variants for left-to-right and right-to-left animations
+  const leftVariants = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+  };
+
+  const rightVariants = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+  };
+
+  // Ref to track if component is in view
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, threshold: 0.2 }); // Animation triggers when 20% is in view
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 pt-16  bg-white">
-      <section className="p-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 pt-16 bg-white" ref={ref}>
+      {/* Left section: Animate on scroll */}
+      <motion.section
+        className="p-8"
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={leftVariants}
+      >
         <div>
           <img
             src="https://brainsmediasolutions.com/wp-content/uploads/2023/05/content_page.png"
@@ -23,9 +45,16 @@ const Row2Content = () => {
             </p>
           </div>
         </div>
-      </section>
-      <section>
-        <div className="pt-44 md:pt-14 p-10">
+      </motion.section>
+
+      {/* Right section: Animate on scroll */}
+      <motion.section
+        className="pt-44 md:pt-14 p-10"
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={rightVariants}
+      >
+        <div>
           <h1 className="text-yellow-400">Who We Are</h1>
           <h1 className="mt-4 text-4xl font-bold mb-4">
             We Provide The Best Content Writing Service for You
@@ -44,9 +73,9 @@ const Row2Content = () => {
             platforms, we earned a reputation for being the most trusted content
             writing agencies in India.
           </p>
-          <ContuctUsButton></ContuctUsButton>
+          <ContuctUsButton />
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

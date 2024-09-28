@@ -3,10 +3,13 @@ import "./Navbar.css";
 import { MdOutlineSegment } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaAngleDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [showServices, setShowServices] = useState(false); // State for services dropdown
+  const handleServicesClick = () => setShowServices(!showServices);
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,26 +28,30 @@ const Navbar = () => {
             <li className="hover:text-yellow-300 hover:cursor-pointer">Home</li>
           </Link>
 
-          {/* Dropdown for Services */}
-          <Link>
-            <li className="hover:text-yellow-300 hover:cursor-pointer relative  ">
-              Services
-              <ul className=" hidden hover:block bg-slate-800 text-white mt-0 w-40">
-                <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
-                  <Link to="/service1">Web Design</Link>
-                </li>
-                <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
-                  <Link to="/service2">SEO Services</Link>
-                </li>
-                <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
-                  <Link to="/service3">Content Writing</Link>
-                </li>
-                <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
-                  <Link to="/service4">Social Media Management</Link>
-                </li>
-              </ul>
-            </li>
-          </Link>
+          <div className="dropdown">
+            <Link>
+              <li className="hover:text-yellow-300 hover:cursor-pointer relative  hover:">
+                <div className="flex gap-4">
+                  Services <FaAngleDown className="text-center " />
+                </div>
+                <ul className=" hidden hover:block bg-slate-800 text-white mt-0 w-40">
+                  <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
+                    <Link to="/web-design">Web Design</Link>
+                  </li>
+                  <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
+                    <Link to="/seo">SEO Services</Link>
+                  </li>
+                  <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
+                    <Link to="/content-writting">Content Writing</Link>
+                  </li>
+                  <li className="hover:bg-yellow-300 hover:text-black py-2 px-4">
+                    <Link to="/social-marketing">Social Media Management</Link>
+                  </li>
+                </ul>
+              </li>
+            </Link>
+          </div>
+
           <Link>
             <li className="hover:text-yellow-300 hover:cursor-pointer">
               Blogs
@@ -71,7 +78,7 @@ const Navbar = () => {
           </button>
         ) : (
           <div
-            className={`bg-slate-800 w-2/3 h-screen absolute  -ml-[306px] -mt-5 transition-transform transform  ${
+            className={`bg-slate-800 w-2/3 h-screen absolute -ml-[306px] -mt-5 transition-transform transform ${
               nav ? "translate-x-0" : "-translate-x-full"
             } duration-300 ease-in`}
           >
@@ -90,22 +97,32 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <li className="hover:text-yellow-300 hover:cursor-pointer">
-                Services
-                <ul className="ml-4 mt-2">
-                  <li className="hover:text-yellow-300 hover:cursor-pointer">
-                    <Link to="/service1">Web Design</Link>
-                  </li>
-                  <li className="hover:text-yellow-300 hover:cursor-pointer">
-                    <Link to="/service2">SEO Services</Link>
-                  </li>
-                  <li className="hover:text-yellow-300 hover:cursor-pointer">
-                    <Link to="/service3">Content Writing</Link>
-                  </li>
-                  <li className="hover:text-yellow-300 hover:cursor-pointer">
-                    <Link to="/service4">Social Media Management</Link>
-                  </li>
-                </ul>
+              <li
+                className="hover:text-yellow-300 hover:cursor-pointer "
+                onClick={handleServicesClick}
+              >
+                <div className="flex ml-28 gap-2">
+                  Services <FaAngleDown className="mt-1" />
+                </div>
+
+                {showServices && (
+                  <ul className="ml-4 mt-2 w-64 bg-gray-950">
+                    <li className="hover:text-yellow-300 hover:cursor-pointer">
+                      <Link to="/web-design">Web Design</Link>
+                    </li>
+                    <li className="hover:text-yellow-300 hover:cursor-pointer">
+                      <Link to="/seo">SEO Services</Link>
+                    </li>
+                    <li className="hover:text-yellow-300 hover:cursor-pointer">
+                      <Link to="/content-writting">Content Writing</Link>
+                    </li>
+                    <li className="hover:text-yellow-300 hover:cursor-pointer">
+                      <Link to="/social-marketing">
+                        Social Media Management
+                      </Link>
+                    </li>
+                  </ul>
+                )}
               </li>
               <li className="hover:text-yellow-300 hover:cursor-pointer">
                 Blogs

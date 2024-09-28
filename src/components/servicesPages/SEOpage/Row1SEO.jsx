@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; // Import framer-motion
 import ContuctUsButton from "../../ContuctUsButton";
 import "./SEOservice.css";
+import seoImg from "./SEOImg/seo-img.png";
 
 const Row1SEO = () => {
   const leftVariants = {
@@ -43,7 +44,7 @@ const Row1SEO = () => {
           animate="visible"
           variants={rightVariants}
         >
-          <img src="" alt="Content banner" />
+          <img src={seoImg} alt="Content banner" />
         </motion.section>
       </div>
     </div>
