@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div>
       <div className="w-full h-[550px] bg-stone-600">
-        <h1 className="text-5xl font-bold text-center pt-28 pl-10 pr-10 text-white">
+        <h1 className="text-xl md:text-5xl font-bold text-center pt-28 pl-10 pr-10 text-white">
           We Love Connecting With People And Exchanging Ideas! Call Us Today!
         </h1>
         <p className="text-base font-medium text-gray-400 p-20 pt-14 text-center">

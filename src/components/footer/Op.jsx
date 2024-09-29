@@ -20,20 +20,20 @@ const Op = () => {
               <h1 className="text-lg font-semibold text-white text-center md:text-start">
                 Got an Idea?
               </h1>
-              <h2 className="text-center text-4xl md:text-5xl font-bold text-white">
+              <h2 className="text-center text-2xl md:text-5xl font-bold text-white">
                 Let's Work on It
               </h2>
             </div>
-            <div className="ml-16 mt-4 md:mt-0 md:flex gap-6 items-center">
-              <button className="flex items-center gap-2 h-10 md:h-14  bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-gray-900 rounded-none p-3 font-semibold text-xl ">
+            <div className="ml-8 md:ml-16 lg:ml-14 mt-4 md:mt-0 md:flex gap-6 items-center">
+              <button className="flex items-center gap-2 h-10 md:h-14  bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-gray-900 rounded-none p-3 font-semibold text-sm md:text-xl ">
                 Call or WhatsApp <FaArrowRightLong />
               </button>
               <div className="flex gap-5 mt-3 md:mt-0">
                 <div className="md:bg-white rounded-full w-14 h-14">
-                  <FaWhatsapp className=" ml-10 text-[#F6C71E] text-3xl md:text-4xl rounded-full md:ml-[10px] md:mt-[10px]" />
+                  <FaWhatsapp className="  text-[#F6C71E] text-3xl md:text-4xl rounded-full md:ml-[10px] md:mt-[10px]" />
                 </div>
                 <div className="text-white mt-0 md:mt-4">
-                  <h1 className="text-center text-lg">012312312312</h1>
+                  <h1 className="text-center text-lg mr-6">012312312312</h1>
                 </div>
               </div>
             </div>

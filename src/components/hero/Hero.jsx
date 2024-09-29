@@ -55,7 +55,7 @@ const Hero = () => {
         >
           <motion.h2
             variants={textVariants}
-            className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4 text-center"
+            className="text-3xl md:text-6xl lg:text-8xl font-bold mb-4 text-center"
           >
             Get your business online in less than 24 hours
           </motion.h2>
@@ -70,7 +70,7 @@ const Hero = () => {
                 duration={500}
                 className="flex justify-center "
               >
-                <div className="flex items-center gap-2 mt-10 bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-gray-900 rounded-none p-3 font-semibold text-xl ">
+                <div className="flex items-center gap-2 mt-5 md:mt-10 bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-gray-900 rounded-none p-3 font-semibold text-xl ">
                   Get Started Now <FaArrowRightLong />
                 </div>
               </Link>

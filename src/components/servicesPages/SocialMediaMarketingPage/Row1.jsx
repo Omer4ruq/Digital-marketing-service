@@ -20,7 +20,7 @@ const Row1 = () => {
 
   return (
     <div className="row1" ref={ref}>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <motion.section
           className="p-20"
           initial="hidden"

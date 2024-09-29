@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import logo1 from "./logoImg/logo1.png";
+import logo2 from "./logoImg/logo2.png";
+import logo3 from "./logoImg/logo3.png";
+import logo4 from "./logoImg/logo4.png";
+import logo5 from "./logoImg/logo5.png";
+import logo6 from "./logoImg/logo6.png";
+import logo7 from "./logoImg/logo7.png";
+import logo8 from "./logoImg/logo8.png";
 
 const LogoSlider = () => {
   const controls = useAnimation(); // Controls the animation based on scroll
@@ -30,16 +38,7 @@ const LogoSlider = () => {
       },
     },
   };
-  const logos = [
-    "/src/assets/logo1.png",
-    "/src/assets/logo2.png",
-    "/src/assets/logo3.png",
-    "/src/assets/logo4.png",
-
-    "/src/assets/logo6.png",
-    "/src/assets/logo7.png",
-    "/src/assets/logo8.png",
-  ];
+  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
   return (
     <div className="mb-16 p-6">
       <div>

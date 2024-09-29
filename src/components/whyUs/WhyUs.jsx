@@ -49,12 +49,12 @@ const WhyUs = () => {
       </div>
       <div className="bg-[#555558] pt-40">
         <div className="md:pt-20 pl-4 md:pl-10 grid grid-cols-2 md:grid-cols-3 gap-4">
-          <h1 className="text-white text-xl font-bold md:w-80">
+          <h1 className="text-white text-xl font-bold  md:w-80">
             TOGETHER WE CAN GROW AND MARKET YOUR BUSINESS!
           </h1>
           <div className="flex gap-4">
             <div>
-              <SiFramework className="text-6xl text-yellow-400" />
+              <SiFramework className="text-xl md:text-6xl text-yellow-400" />
             </div>
             <div className="md:w-80 ">
               <h1 className="text-yellow-400 text-2xl">Quality Work</h1>

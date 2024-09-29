@@ -43,7 +43,7 @@ const TypingText = ({ typo }) => {
   return (
     <div className="">
       <p
-        className="text-base md:text-lg lg:text-xl font-mono mb-6"
+        className="text-base md:text-lg lg:text-xl font-mono mb-2 md:mb-6"
         style={{ wordSpacing: "7px" }}
       >
         <span>{displayedText}</span>

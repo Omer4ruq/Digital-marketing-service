@@ -20,27 +20,14 @@
 }
 
 .dark-nav {
-  background: #212ea0;
-  transition: 0.5s;
-}
-
-.dropdown {
-  position: relative; /* Position relative for absolute child */
+  background: rgba(8, 0, 58, 1);
 }
 
 .dropdown ul {
-  display: none; /* Hidden by default */
-  position: absolute; /* Positioned relative to the parent */
-  background-color: #1e293b; /* Background color */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-  transition: opacity 0.3s ease; /* Transition for smoothness */
-  opacity: 0; /* Initially hidden */
-  pointer-events: none; /* Prevent mouse events when hidden */
+  position: absolute;
+  z-index: 20;
 }
 
 .dropdown:hover ul {
-  display: block; /* Show on hover */
-  opacity: 1; /* Fully visible */
-  pointer-events: auto; /* Enable mouse events */
+  display: block;
 }

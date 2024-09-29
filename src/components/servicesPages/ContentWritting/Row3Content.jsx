@@ -31,7 +31,7 @@ const Row3Content = () => {
         animate={isInView ? "visible" : "hidden"}
         variants={fadeInLeft}
       >
-        <div className="p-10 md:pt-16">
+        <div className="p-4 md:p-10 md:pt-16">
           <h1 className="text-yellow-400">Who Us?</h1>
           <h1 className="mt-4 text-4xl font-bold mb-4">
             We're A Reliable & Trusted Content Marketing Agency

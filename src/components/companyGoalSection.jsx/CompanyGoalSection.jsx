@@ -38,7 +38,7 @@ const CompanyGoalSection = () => {
   };
 
   const rightSlideVariant = {
-    hidden: { x: 10, opacity: 0 },
+    hidden: { x: 5, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
@@ -61,21 +61,11 @@ const CompanyGoalSection = () => {
       className="grid grid-cols-1 p-4 mb-16 md:grid-cols-2 md:p-10"
     >
       {/* Left section with sliding in from the left */}
-      <motion.section
-        className="pr-1 mt-6 md:mt-12 mb-8"
-        variants={leftSlideVariant}
-        initial="hidden"
-        animate={controlsLeft}
-      >
-        <motion.h1
-          className="text-4xl font-semibold mb-4"
-          variants={textVariant}
-          initial="hidden"
-          animate={controlsText}
-        >
+      <section className="pr-1 mt-6 md:mt-12 mb-8">
+        <h1 className="text-4xl font-semibold mb-4">
           Digital Marketing Company in Chittagong, Bangladesh
-        </motion.h1>
-        <motion.div className="pr-8" variants={textVariant}>
+        </h1>
+        <div className="pr-8">
           <p className="pb-4 text-gray-500 font-sans">
             Bros Media Solutions is the number one digital marketing service
             provider, located near Chittagong. We are known for delivering
@@ -97,27 +87,22 @@ const CompanyGoalSection = () => {
           <button className="flex items-center gap-2 mt-6 bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-white rounded-none p-3 font-semibold text-base ">
             Learn More
           </button>
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
 
       {/* Right section with sliding in from the right */}
-      <motion.section
-        className="pl-0 md:p-4 relative"
-        variants={rightSlideVariant}
-        initial="hidden"
-        animate={controlsRight}
-      >
-        <motion.div>
+      <section className="pl-0 md:p-4 relative">
+        <div>
           <img src={img1} alt="About 1" className="md:absolute h-[420px]" />
-        </motion.div>
-        <motion.div>
+        </div>
+        <div>
           <img
             src={img2}
             alt="About 2"
-            className="md:absolute -mt-40 md:mt-60 ml-10 h-[320px]"
+            className="md:absolute -mt-40 md:mt-60  ml-4 md:ml-10 h-[320px]"
           />
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
     </div>
   );
 };

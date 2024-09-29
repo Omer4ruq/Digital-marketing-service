@@ -6,6 +6,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home.jsx";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
+import Blogs from "./components/blogs/Blogs.jsx";
 import WebDesignPage from "./components/servicesPages/WebDesignPage/WebDesignPage.jsx";
 import SocialMediaMarketing from "./components/servicesPages/SocialMediaMarketingPage/SocialMediaMarketing.jsx";
 import ContentWritting from "./components/servicesPages/ContentWritting/ContentWritting.jsx";
@@ -37,12 +38,16 @@ const router = createBrowserRouter([
         element: <SocialMediaMarketing></SocialMediaMarketing>,
       },
       {
-        path: "/content-writting",
+        path: "/content-writing",
         element: <ContentWritting></ContentWritting>,
       },
       {
         path: "/seo",
         element: <SEOservice></SEOservice>,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
       },
     ],
   },
