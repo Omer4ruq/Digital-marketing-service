@@ -80,7 +80,7 @@ const Navbar = () => {
           </button>
         ) : (
           <motion.div
-            className="bg-slate-800 w-2/3 h-screen absolute -ml-[200px] -mt-5"
+            className="bg-slate-800 w-2/3 h-screen absolute -ml-[270px] -mt-5"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}

@@ -24,7 +24,7 @@ const Op = () => {
                 Let's Work on It
               </h2>
             </div>
-            <div className="ml-8 md:ml-16 lg:ml-14 mt-4 md:mt-0 md:flex gap-6 items-center">
+            <div className="ml-16 md:ml-16 lg:ml-14 mt-4 md:mt-0 md:flex gap-6 items-center">
               <button className="flex items-center gap-2 h-10 md:h-14  bg-[#F6C71E] hover:bg-zinc-500 transition-colors duration-1000 ease-in-out text-gray-900 rounded-none p-3 font-semibold text-sm md:text-xl ">
                 Call or WhatsApp <FaArrowRightLong />
               </button>

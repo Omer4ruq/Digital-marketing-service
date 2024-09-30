@@ -50,7 +50,7 @@ const Services = () => {
   };
 
   return (
-    <div ref={ref} className="mb-16">
+    <div ref={ref} className="mb-16 w-96">
       {/* Title animation */}
       <div className="text-center">
         <motion.h1
@@ -107,7 +107,7 @@ const Services = () => {
           initial="hidden"
           animate={controls}
         >
-          <Link to="content-writting">
+          <Link to="content-writing">
             <img
               src={content}
               alt="Content Writing"
@@ -141,7 +141,7 @@ const Services = () => {
         </motion.div>
 
         <motion.div
-          className="bg-white w-40 h-36 drop-shadow-xl text-center flex flex-col items-center justify-center p-4 md:w-48 md:h-40 lg:w-[400px] lg:h-56 hover:cursor-pointer hover:bg-yellow-400 transition-colors duration-1000 ease-in-out"
+          className="bg-white w-40 h-36 drop-shadow-xl text-center  flex flex-col items-center justify-center p-4 md:w-48 md:h-40 lg:w-[400px] lg:h-56 hover:cursor-pointer hover:bg-yellow-400 transition-colors duration-1000 ease-in-out"
           variants={itemVariantLeft}
           initial="hidden"
           animate={controls}
